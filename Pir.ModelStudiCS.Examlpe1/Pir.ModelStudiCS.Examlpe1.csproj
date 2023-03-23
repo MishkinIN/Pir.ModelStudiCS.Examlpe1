@@ -47,12 +47,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command.cs" />
+    <Compile Include="DllRegistator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="mdsUnitsLib">
-		<!--Model Studio Objects 1.0 Type Library-->
-		<Guid>{1AE1985C-5D87-4E89-8E67-068628FC3CD6}</Guid>
+      <!--Model Studio Objects 1.0 Type Library-->
+      <Guid>{1AE1985C-5D87-4E89-8E67-068628FC3CD6}</Guid>
       <VersionMajor>1</VersionMajor>
       <VersionMinor>0</VersionMinor>
       <Lcid>0</Lcid>
@@ -69,6 +71,12 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LICENSE.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
