@@ -74,3 +74,5 @@ using namespace ATL;
 #define _DEBUG
 #undef _DEBUG_WAS_DEFINED
 #endif
+
+#include "CSDataInterfaces.h"
